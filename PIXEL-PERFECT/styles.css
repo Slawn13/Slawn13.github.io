@@ -20,7 +20,7 @@ body {
 
     background-color: rgba(243, 243, 243, 1);
     width: 75%;
-    height: 90vh;
+    height: 100vh;
     margin: 0 auto;
 
 }
@@ -106,9 +106,13 @@ p span {
 
 footer {
 
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
 text-align: center;
 padding: 27px;
-height: 10vh;
+min-height: 10vh;
 color: rgba(255, 255, 255, 1);
 background: rgba(58, 58, 58, 1);
 
