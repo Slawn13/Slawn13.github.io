@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="popUpOverlay" id="hidden"></div>
+
+    <!-- "popUpMOVIEContainer"> -->
+    <div class="popUpMovie" id="hidden">
+        <div class="closeMovie"><img src="Group 9.png" alt=""></div>
+        <div class="picture"><img src="Rectangle 2.png" alt=""></div>
+        <div class="infoMovie">
+            <h3 id="title">the godfather</h3>
+            <p id="releaseYear">1972</p>
+            <h2 id="note"><img src="etoile.png" alt="">8.7</h2>
+            <h3 id="popGenre">crime / drama</h3>
+            <p id="synopsis">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</p>
+            <div id="castingContainer">
+                <p id="cast">CAST:</p>
+                <p id="castNames">Marlon Brando, Al Pacino, James Caan, Robert Duvall</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- "popUpLOGINContainer"> -->
+    <div class="popContainer" id="hidden">
+        <div class="closeLogin"><img src="Group 9.png" alt=""></div>
+        <div class="containSignLog">    
+            <p class="sign">signup</p><p class="login">login</p>
+        </div>
+            <input type="text" class="inputUserName" placeholder="   Username">
+            <input type="text" class="inputPassWord" placeholder="   Password">
+            <div class="remember">
+                <input type="checkbox" name="" id=""><p id="rememberTxt">Remember me</p>
+            </div>
+            <p class="loginButton">login</p>
+            <p class="forgotPass">I forgot my password</p>
+            <p class="notMember">Not a memeber yet ? <span id="alsoSignUp">Sign up</span></p>
+    </div>
+    <!-- "header"> -->
+    <div class="header">
+        <p class="beMovieHead"><span class="red">be</span>movies</p>
+        <ul class="ulHead headMenuList">
+            <li><a href="#searchForm">search</a></li>
+            <li><a href="#lastRel">latest</a></li>
+            <li><a href="#moviesGenre">genres</a></li>
+            <li><a href="#" class="headRegister">register</a></li>
+            <li><a href="#" class="headSignIn">signin</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="burgerLine"></div>
+            <div class="burgerLine"></div>
+            <div class="burgerLine"></div>
+        </div>
+    </div>
+    <!-- "mainContent"> -->
+    <div class="container">
+        <div class="searchForm" id="searchForm">
+            <input type="text" placeholder="search" id="inputSearch">
+            <button id="searchButton"><img src="Vector.png" alt=""></button>
+        </div>
+        <!-- "searchResult"> -->
+            <p class="resultFor" id="hidden"></p>  
+            <div class="sliderSearch" id="hidden">
+                <div class="searchSwip swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="Rectangle 2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
+                    
+                    </div>
+                    <!-- If we need navigation buttons -->
+                </div>
+                
+                <div class="searchButWrap">
+                    <div class="swiper-button-prev"><img src="VectorL.svg" alt=""></div>
+                    <div class="swiper-button-next"><img src="VectorR.svg" alt=""></div>
+                </div>    
+            </div> 
+        
+        <!-- "lastRelease"> -->
+            <p id="lastRel">Lastest release</p>
+                <div class="sliderLast">
+                    <div class="lastSwip swiper">
+                        <div class="swiper-wrapper" id="lastestMovie">
+                        <div class="swiper-slide">
+                            <img src="Rectangle 2.png" alt="">
+                            <div class="overlay">
+                                <p>The Godfather</p>
+                                <p>1990</p>
+                                <p id="genre">Crime / Drama / Thriller</p>
+                                <p id="note"><img src="etoile.png" alt="">7.4</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="Rectangle 3.png" alt=""><div class="overlay"></div></div>
+                        <div class="swiper-slide"><img src="Rectangle 4.png" alt=""><div class="overlay"></div></div>
+                        <div class="swiper-slide"><img src="Rectangle 5.png" alt=""><div class="overlay"></div></div>
+                        <div class="swiper-slide"><img src="Rectangle 4.png" alt=""><div class="overlay"></div></div>
+                        <div class="swiper-slide"><img src="Rectangle 5.png" alt=""><div class="overlay"></div></div>
+                        </div>
+                    </div>
+                        <div class="lastButWrap">
+                            <div class="swiper-button-prev"><img src="VectorL.svg" alt=""></div>
+                            <div class="swiper-button-next"><img src="VectorR.svg" alt=""></div>
+                        </div>
+                </div>
+            
+        <!-- "moviesGenre"> -->
+            <p id="moviesGenre">Movies by genre</p>
+                <ul class="ulGenres">
+                    <li><a href="#movieGenre" class="comedy" id="clicked">Comedy</a></li>
+                    <li><a href="#movieGenre" class="drama">Drama</a></li>
+                    <li><a href="#movieGenre" class="action">Action</a></li>
+                    <li><a href="#movieGenre" class="romance">Romance</a></li>
+                    <li><a href="#movieGenre" class="fantasy">Fantasy</a></li>
+                    <li><a href="#movieGenre" class="animation">Animation</a></li>
+                </ul>
+            <div class="underline"></div>
+            <p id="selectedGenre"></p>
+            <div class="sliderGenre">
+                <div class="genreSwip swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="Rectangle 2 copy.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    
+                    <!-- If we need navigation buttons -->
+                </div>
+                <div class="genreButWrap">
+                    <div class="swiper-button-prev"><img src="VectorL.svg" alt=""></div>
+                    <div class="swiper-button-next"><img src="VectorR.svg" alt=""></div>
+                </div>    
+            </div>
+    </div>
+    <!-- "footer"> -->
+    <footer class="footer">
+        <p class="beMovieFoot"><span class="red">be</span>movies</p>
+        <ul class="ulFoot footMenuList">
+            <li><a href="#searchForm">search</a></li>
+            <li><a href="#lastRel">latest</a></li>
+            <li><a href="#movieGenre">genres</a></li>
+            <li><a href="#" class="footRegister">register</a></li>
+            <li><a href="#" class="footSignIn">signin</a></li>
+        </ul>
+        <p class="right">@2023 - All rights reserved</p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
