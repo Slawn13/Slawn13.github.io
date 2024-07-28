@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("_b147e668-f62d-4672-a3c6-f839dce3c2ca.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1 {
+    font-weight: 300;
+    color: rgba(240, 201, 145, 1) ;
+    padding: 1px 10px;
+    background-color: black ;
+    border-radius: 10px;
+    border: rgba(240, 201, 145, 1) 2px solid;
+}
+
+
+.board {
+    background-color: rgba(240, 201, 145, 1);
+    min-width: 400px;
+    min-height: 400px;
+
+    display: grid;
+
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+
+   gap: 3px;
+   padding: 3px;
+
+   border-radius: 3px;
+}
+
+.cell {
+    background-color: black;
+    color: white;
+
+    font-size: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    border: solid 2px rgba(240, 201, 145, 1);
+    
+}
+
+.restart {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(240, 201, 145, 1);
+}
+
+p {     
+    padding: 0px 10px;
+    background-color: black;
+    border-radius: 10px;
+    color: rgba(240, 201, 145, 1);
+}
