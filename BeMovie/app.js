@@ -2,41 +2,58 @@
 
 const swiper = new Swiper(".searchSwip", {
   // Optional parameters
-  slidesPerView: 4,
+  centeredSlides:true,
+  slidesPerView: 1,
   direction: "horizontal",
   loop: true,
-  spaceBetween: 15,
-
+  spaceBetween: 10,
+  
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 
   // Navigation arrows
   navigation: {
     nextEl: ".searchButWrap .swiper-button-next",
     prevEl: ".searchButWrap .swiper-button-prev",
   },
+
+
+
 });
 
 const swiper2 = new Swiper(".lastSwip", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 10,
-  // slidesOffsetAfter: 0,
-  // slidesOffsetBefore: 0,
-  // breakpoints: {
-  //   640: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 10,
-  //   },
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 10,
-  //   },
-  //   1024: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 10,
-  //   }
-  // },
+  
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 
   // Navigation arrows
   navigation: {
@@ -47,13 +64,25 @@ const swiper2 = new Swiper(".lastSwip", {
 
 const swiper3 = new Swiper(".genreSwip", {
   // Optional parameters
-  slidesPerView: 4,
+  slidesPerView: 1,
   direction: "horizontal",
   loop: true,
-  spaceBetween: 15,
-  slidesOffsetAfter: 0,
-  slidesOffsetBefore: 0,
+  spaceBetween: 10,
 
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 
   // Navigation arrows
   navigation: {
@@ -487,7 +516,8 @@ async function getGenreMovie(url) {
       let texteGenresMovie = genreTxt.join(" / ");
 
       swiper3.appendSlide([
-        `<div class="swiper-slide swiper-slide3"><img src="${
+        `<div class="swiper-slide swiper-slide3">
+        <img src="${
           imgURL + movie.poster_path
         }" alt=""><div class="overlay"><p>${
           movie.original_title
