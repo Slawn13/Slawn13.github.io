@@ -12,8 +12,8 @@
 
 .sliderSearch, .sliderLast, .sliderGenre {
     position: relative;
-    width: 1075px;
-    overflow: clip;
+    width: 90%; 
+    /* overflow: clip; */
 }
 
 .swiper {
@@ -22,8 +22,8 @@
 }
 
 .swiper-slide {
-    width: 50%;
-    overflow: hidden;
+    max-height: 350px;
+    max-width: 233px;
 }
 
 
@@ -36,21 +36,29 @@
     display: none;
 }
 
+/* @media (max-width 700px) {
+    .swiper-slide {
+        width: 20%;
+    }
+    .overlay {
+
+    }
+} */
+
 .overlay {
-    /* width: 100%; */
-    height: 100%;
-    position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.75);
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+width: 100%;
+height: 100%;
+position: absolute;
+bottom: 0;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.75);
+color: #f1f1f1;
+transition: .5s ease;
+opacity:0;
+color: white;
+font-size: 20px;
+/* padding: 20px; */
+text-align: center;
 }
 
 .overlay p {
@@ -92,7 +100,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
+
+
+
 
 /* RESET & MISE EN PAGE  */
 
@@ -162,9 +173,7 @@ a:hover {
     align-items: center;
     justify-content: space-around;
     background-color: black;
-
     z-index: 1001;
-
 }
 
 #popGenre {
