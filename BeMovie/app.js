@@ -2,12 +2,12 @@
 
 const swiper = new Swiper(".searchSwip", {
   // Optional parameters
-  centeredSlides:true,
+  centeredSlides: true,
   slidesPerView: 1,
   direction: "horizontal",
   loop: true,
   spaceBetween: 10,
-  
+
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -28,9 +28,6 @@ const swiper = new Swiper(".searchSwip", {
     nextEl: ".searchButWrap .swiper-button-next",
     prevEl: ".searchButWrap .swiper-button-prev",
   },
-
-
-
 });
 
 const swiper2 = new Swiper(".lastSwip", {
@@ -39,7 +36,7 @@ const swiper2 = new Swiper(".lastSwip", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
-  
+
   breakpoints: {
     640: {
       slidesPerView: 2,
